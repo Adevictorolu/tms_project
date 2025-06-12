@@ -11,19 +11,19 @@ class SplashMainScreen extends StatefulWidget {
 }
 
 class _SplashMainScreenState extends State<SplashMainScreen> {
-  @override
-  void initState() {
-    super.initState();
-    Future.delayed(Duration(seconds: 3), () {
-      // ignore: use_build_context_synchronously
-      Navigator.of(context).pushNamed(RouteManager.b);
-    });
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   Future.delayed(Duration(minutes: 1), () {
+  //     // ignore: use_build_context_synchronously
+  //     Navigator.of(context).pushNamed(RouteManager.b);
+  //   });
+  // }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -31,25 +31,31 @@ class _SplashMainScreenState extends State<SplashMainScreen> {
       backgroundColor: ColorsPallate.backgroundColor,
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             AnimatedTextKit(
-              animatedTexts: [
-                TypewriterAnimatedText(
-                  'Traffic Management App',
-                  textStyle: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
+                animatedTexts: [
+                  WavyAnimatedText(
+                    'Traffic Management System',
+                    textStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
-                  speed: const Duration(milliseconds: 2000),
+                ],
+                pause: Duration(seconds: 1),
+                isRepeatingAnimation: true,
+              ),
+              Text(
+                'Leveraging Technology in the Traffic System',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white,
                 ),
-              ],
-
-              totalRepeatCount: 4,
-              pause: const Duration(milliseconds: 1000),
-              displayFullTextOnTap: true,
-              stopPauseOnTap: true,
-            ),
+              ),
           ],
         ),
       ),
