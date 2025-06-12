@@ -11,19 +11,19 @@ class SplashMainScreen extends StatefulWidget {
 }
 
 class _SplashMainScreenState extends State<SplashMainScreen> {
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   Future.delayed(Duration(minutes: 1), () {
-  //     // ignore: use_build_context_synchronously
-  //     Navigator.of(context).pushNamed(RouteManager.b);
-  //   });
-  // }
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(Duration(seconds: 20), () {
+      // ignore: use_build_context_synchronously
+      Navigator.of(context).pushNamed(RouteManager.c);
+    });
+  }
 
-  // @override
-  // void dispose() {
-  //   super.dispose();
-  // }
+  @override
+  void dispose() {
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,11 +37,13 @@ class _SplashMainScreenState extends State<SplashMainScreen> {
             AnimatedTextKit(
                 animatedTexts: [
                   WavyAnimatedText(
-                    'Traffic Management System',
+                    'TRAFFIC MANAGEMENT SYSTEM',
                     textStyle: TextStyle(
                       color: Colors.white,
                       fontSize: 40,
-                      fontWeight: FontWeight.w800,
+                      fontFamily: 'Montserrat',
+                      letterSpacing: 1,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
