@@ -26,8 +26,8 @@ flutter:
   uses-material-design: true
 
 assets:
-  # - asset/img
-  - asset/img/Wavy_Tsp-05_Single-02.jpg
+  - asset/img/
+  - asset/img/traffic-sign-svgrepo-com.svg
 
 fonts:
   - family: Montserrat

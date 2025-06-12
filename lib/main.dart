@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tms_project/route.dart';
 import 'package:tms_project/splashmain.dart';
+import 'package:tms_project/splashscreen1.dart';
 
 void main() {
   runApp(const Homepage());
@@ -20,7 +21,7 @@ class Homepage extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         fontFamily: 'Montserrat',
       ),
-      home: SplashMainScreen()
+      home: SplashScreen1()
     );
   }
 }

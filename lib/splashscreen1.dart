@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:tms_project/colors.dart';
 
@@ -14,31 +15,31 @@ class _SplashScreen1State extends State<SplashScreen1> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Text(
-                  'Skip',
-                  style: TextStyle(
-                    color: ColorsPallate.textcolor,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
+        child: Padding(
+          padding: const EdgeInsets.all(40.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  GestureDetector(
+                    onTap: Navigator.of(context).pop,
+                    child: Text(
+                      'Skip',
+                      style: TextStyle(
+                        color: ColorsPallate.textcolor,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
                   ),
-                ),
-              ],
-            ),
-            Gap(30),
-            Image.asset(
-              'asset/img/Wavy_Tsp-05_Single-02.jpg',
-              height: 500,
-              width: 100,
-              cacheHeight: 500,
-              cacheWidth: 100,
-            ),
-          ],
+                ],
+              ),
+              Gap(30),
+              SvgPicture.asset('asset/img/traffic-sign-svgrepo-com.svg', height: 500, width: 100,)
+            ],
+          ),
         ),
       ),
     );
