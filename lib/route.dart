@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tms_project/main.dart';
-import 'package:tms_project/splashmain.dart';
-import 'package:tms_project/splashscreen1.dart';
+import 'package:propel_project/main.dart';
+import 'package:propel_project/splashmain.dart';
+import 'package:propel_project/splashscreen1.dart';
 
 class RouteManager {
   static String a = '/';

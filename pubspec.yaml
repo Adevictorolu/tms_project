@@ -1,68 +1,69 @@
-name: tms_project
+name: propel_project
 description: "A new Flutter project."
-publish_to: "none"
-
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
   sdk: ^3.7.2
-
 dependencies:
   flutter:
     sdk: flutter
-
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.1.0
   gap: ^3.0.1
   animated_text_kit: ^4.2.3
+  animated_splash_screen: ^1.3.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^5.0.0
 
 flutter:
+
   uses-material-design: true
 
-assets:
-  - assets/img/
-  - assests/img/traffic-sign-svgrepo-com.svg
+  assets:
+    - assets/img/
+    # - asset/img/Platform=Google, Shape=Original, Colored=True.svg
+    # - asset/img/Propel_by_AkinAkingbogun_LOGO-removebg-preview.png
+    # - asset/img/Blue Technical Background 5.jpg
+    # - asset/img/illustration continue with phone.svg
 
-fonts:
-  - family: Montserrat
-    fonts:
-      - asset: assets/fonts/Montserrat-ThinItalic.ttf
-        style: italic
-        weight: 100
-      - asset: assets/fonts/Montserrat-Thin.ttf
-        style: normal
-        weight: 100
-      - asset: assets/fonts/Montserrat-SemiBoldItalic.ttf
-        style: italic
-        weight: 800
-      - asset: assets/fonts/Montserrat-SemiBold.ttf
-        style: normal
-        weight: 800
-      - asset: assets/fonts/Montserrat-Regular.ttf
-        style: normal
-        weight: 400
-      - asset: assets/fonts/Montserrat-MediumItalic.ttf
-        style: italic
-        weight: 500
-      - asset: assets/fonts/Montserrat-Medium.ttf
-        style: normal
-        weight: 500
-      - asset: assets/fonts/Montserrat-Italic.ttf
-        style: normal
-        weight: 400
-      - asset: assets/fonts/Montserrat-ExtraBold.ttf
-        style: normal
-        weight: 900
-      - asset: assets/fonts/Montserrat-BoldItalic.ttf
-        style: italic
-        weight: 900
-      - asset: assets\fonts\Montserrat-Black.ttf
-        style: italic
-      - asset: assets\fonts\Montserrat-Black.ttf
-        style: normal
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-ThinItalic.ttf
+          style: italic
+          weight: 100
+        - asset: assets/fonts/Montserrat-Thin.ttf
+          style: normal
+          weight: 100
+        - asset: assets/fonts/Montserrat-SemiBoldItalic.ttf
+          style: italic
+          weight: 800
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          style: normal
+          weight: 800
+        - asset: assets/fonts/Montserrat-Regular.ttf
+          style: normal
+          weight: 400
+        - asset: assets/fonts/Montserrat-MediumItalic.ttf
+          style: italic
+          weight: 500
+        - asset: assets/fonts/Montserrat-Medium.ttf
+          style: normal
+          weight: 500
+        - asset: assets/fonts/Montserrat-Italic.ttf
+          style: normal
+          weight: 400
+        - asset: assets/fonts/Montserrat-ExtraBold.ttf
+          style: normal
+          weight: 900
+        - asset: assets/fonts/Montserrat-BoldItalic.ttf
+          style: italic
+          weight: 900
+        - asset: assets\fonts\Montserrat-Black.ttf
+          style: italic
+        - asset: assets\fonts\Montserrat-Black.ttf
+          style: normal

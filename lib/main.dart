@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tms_project/route.dart';
-import 'package:tms_project/splashmain.dart';
-import 'package:tms_project/splashscreen1.dart';
+import 'package:propel_project/route.dart';
+import 'package:propel_project/splashscreen1.dart';
 
 void main() {
   runApp(const Homepage());
