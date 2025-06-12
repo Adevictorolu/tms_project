@@ -18,7 +18,6 @@ class Homepage extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
         fontFamily: 'Montserrat',
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: SplashMainScreen()
     );

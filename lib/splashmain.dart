@@ -1,6 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:tms_project/colors.dart';
+import 'package:tms_project/route.dart';
 
 class SplashMainScreen extends StatefulWidget {
   const SplashMainScreen({super.key});
@@ -10,6 +11,20 @@ class SplashMainScreen extends StatefulWidget {
 }
 
 class _SplashMainScreenState extends State<SplashMainScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(Duration(seconds: 3), () {
+      // ignore: use_build_context_synchronously
+      Navigator.of(context).pushNamed(RouteManager.b);
+    });
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

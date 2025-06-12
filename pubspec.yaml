@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  flutter_svg: ^2.1.0
+  gap: ^3.0.1
   animated_text_kit: ^4.2.3
 
 dev_dependencies:
@@ -24,8 +26,8 @@ flutter:
 
   uses-material-design: true
 
-  assets:
-    - asset\img
+  # assets:
+  #   - asset\img
 
 fonts:
     - family: Montserrat
