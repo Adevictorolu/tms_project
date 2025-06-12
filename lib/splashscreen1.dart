@@ -18,7 +18,6 @@ class _SplashScreen1State extends State<SplashScreen1> {
         child: Padding(
           padding: const EdgeInsets.all(40.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -37,7 +36,11 @@ class _SplashScreen1State extends State<SplashScreen1> {
                 ],
               ),
               Gap(30),
-              SvgPicture.asset('asset/img/traffic-sign-svgrepo-com.svg', height: 500, width: 100,)
+              SvgPicture.asset(
+                height: 50,
+                width: double.infinity,
+                'aasset/img/traffic-weather-conditions-svgrepo-com.svg',
+              ),
             ],
           ),
         ),
